@@ -1,0 +1,22 @@
+.a{
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+    width: 40rem;
+    height: 35rem;
+    object-fit: cover;
+    border: solid black 1px;
+}
+
+body {
+   
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .carousel-caption{
+      color: black;
+  }
+
+

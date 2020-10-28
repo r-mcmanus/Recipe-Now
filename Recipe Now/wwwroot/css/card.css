@@ -1,0 +1,78 @@
+
+
+.photo {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.info {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    height: 15em;
+    width: 20em;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#title {
+    color: whitesmoke;
+    padding: .5em;
+    font-family: 'Prata', serif;
+}
+
+.btn-group {
+    font-family: 'Playfair Display', serif;
+}
+
+.fab {
+    color: teal;
+    padding-top: 20px;
+}
+
+.bot {
+    color: teal;
+    padding-top: 20px;
+}
+
+.carousel-control-prev-icon {
+    height: 100px;
+    width: 50px;
+    outline: black;
+    border: 1px solid black;
+    background-image: none;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+}
+
+.carousel-control-next-icon {
+    right: 0px;
+    height: 100px;
+    width: 50px;
+    outline: black;
+    border: 1px solid black;
+    background-image: none;
+    background-color: black;
+    position: absolute;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 40px;
+    color: teal;
+    padding-top: 15px;
+    position: absolute;
+
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 40px;
+    color: teal;
+    position: absolute;
+    padding-top: 15px;
+    left: 0px;
+}

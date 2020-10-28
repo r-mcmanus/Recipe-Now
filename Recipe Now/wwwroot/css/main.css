@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+a {
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    
+}
+
+
+.but{
+    background-color: black;
+     border: black;
+}
+
+.but:hover{
+    background-color: teal;
+    border: black;
+    color: black;
+}
+
+.form-control{
+    padding: .55rem;  
+    border-radius: 0px;
+    padding-right: 10rem;
+    margin-right: 5rem;
+    
+    background-color: black;
+    border: 0;
+    
+}
+
+.form-control:focus {
+    background-color: black;
+    color: teal;
+}
+
+input{
+    background-color: black;
+}

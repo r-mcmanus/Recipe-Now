@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/main.css">
+    @RenderSection("Styles", false)
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5b2bfb13e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px;">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active but" href="~/Collection">Collections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link but" href="~/Card">Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link but" href="~/Card">Drink</a>
+            </li>
+        </ul>
+
+
+        <ul class="nav">
+
+            <li class="nav-item">
+                <button class=" but btn btn-dark fas fa-search fa-2x"></button>
+            </li>
+
+            <li class="nav-item d-none d-md-block">
+                <form class="form-inline nav-item">
+                    <input class="form-control" type="Search" placeholder="Search">
+                </form>
+            </li>
+
+
+
+        </ul>
+
+        <ul class="nav">
+            <li class="nav-item">
+                <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="window.location.href = 'Likes'"></button>
+            </li>
+
+            <li class="nav-item ">
+                <button class=" but btn btn-dark fa fa-cog fa-2x"></button>
+            </li>
+        </ul>
+
+    </nav>
+
+    @RenderBody()
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+</html>
