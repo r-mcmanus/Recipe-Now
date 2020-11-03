@@ -11,8 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d5b2bfb13e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
+    <script>
+    function Ingredients() {
+      var x = document.getElementById("ingr");
+      var y =document.getElementById("buttonGroup")
+      if(x.style.display === "none")
+      {
+        x.style.display = "block";
+        y.style.display = "none";
+      } else{
+        x.style.display = "none"
+        y.style.display = "block";
+
+      }
+    }
+  </script>
 </head>
-<body>
+<body style="background-color: #edf7f6;">
     <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px;">
         <ul class="nav">
             <li class="nav-item">
@@ -23,9 +38,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link but" href="~/Card">Drink</a>
-            </li>
-            <li class="nav-item">
-                <partial name="_LoginPartial" />
             </li>
         </ul>
 
@@ -52,7 +64,7 @@
             </li>
 
             <li class="nav-item ">
-                <button class=" but btn btn-dark fa fa-cog fa-2x"></button>
+                <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Signup'"></button>
             </li>
         </ul>
 
