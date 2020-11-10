@@ -26,9 +26,17 @@
       }
     }
   </script>
+
+  <script>
+      function signInButton()
+      {
+          var x = document.getElementsByClassName("but");
+
+      }
+  </script>
 </head>
 <body style="background-color: #edf7f6;">
-    <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px;">
+    <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px; ">
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active but" href="~/Collection">Collections</a>
@@ -63,9 +71,14 @@
                 <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="window.location.href = 'Likes'"></button>
             </li>
 
-            <li class="nav-item ">
+            <li class="nav-item signup " style="display:none">
                 <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Signup'"></button>
             </li>
+
+            <li class="nav-item signup" style="display: block; padding-top:3px; font-family: 'Playfair Display', sans-serif; ">
+                <button class="btn btn-dark" onclick="window.location.href = 'Signup'">Sign In</button>
+            </li>
+        
         </ul>
 
     </nav>
