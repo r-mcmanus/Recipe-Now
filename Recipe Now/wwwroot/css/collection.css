@@ -22,7 +22,10 @@ body {
   }
 
   .carousel-caption{
-      color: black;
+      background-color: black;
+      color: white;
+      opacity: 0.7;
+      
   }
 
 
