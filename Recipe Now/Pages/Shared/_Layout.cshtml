@@ -75,13 +75,16 @@
             </li>
 
             <li class="nav-item signup " style="display:none">
-                <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Signup'"></button>
+                <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Identity/Account/Register'"></button>
             </li>
 
             <li class="nav-item signup" style="display: block; padding-top:3px; font-family: 'Playfair Display', sans-serif; ">
-                <button class="btn btn-dark" onclick="window.location.href = 'Signup'">Sign In</button>
+                <button class="btn btn-dark" onclick="document.location='Signup' ">Sign In</button>
             </li>
-        
+            <li class="nav-item">
+                <partial name="_LoginPartial" />
+            </li>
+
         </ul>
 
     </nav>
