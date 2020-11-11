@@ -11,9 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d5b2bfb13e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
+    <script>
+    function Ingredients() {
+      var x = document.getElementById("ingr");
+      var y =document.getElementById("buttonGroup")
+      if(x.style.display === "none")
+      {
+        x.style.display = "block";
+        y.style.display = "none";
+      } else{
+        x.style.display = "none"
+        y.style.display = "block";
+
+      }
+    }
+  </script>
+
+  <script>
+      function signInButton()
+      {
+          var x = document.getElementsByClassName("but");
+
+      }
+  </script>
 </head>
-<body>
-    <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px;">
+<body style="background-color: #edf7f6;">
+    <nav class="navbar fixed-top" style="background-color: black; padding-bottom: 0px; padding-top: 0px; ">
         <ul class="nav">
             <!-- Admin's Choice-->
             <li class="nav-item">
@@ -26,9 +49,6 @@
             <!-- Randomly generated list of drink recipes-->
             <li class="nav-item">
                 <a class="nav-link but" href="~/Card">Drink</a>
-            </li>
-            <li class="nav-item">
-                <partial name="_LoginPartial" />
             </li>
         </ul>
 
@@ -54,9 +74,17 @@
                 <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="window.location.href = 'Likes'"></button>
             </li>
 
-            <li class="nav-item ">
-                <button class=" but btn btn-dark fa fa-cog fa-2x"></button>
+            <li class="nav-item signup " style="display:none">
+                <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Identity/Account/Register'"></button>
             </li>
+
+            <li class="nav-item signup" style="display: block; padding-top:3px; font-family: 'Playfair Display', sans-serif; ">
+                <button class="btn btn-dark" onclick="document.location='Signup' ">Sign In</button>
+            </li>
+            <li class="nav-item">
+                <partial name="_LoginPartial" />
+            </li>
+
         </ul>
 
     </nav>

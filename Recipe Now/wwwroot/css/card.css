@@ -14,13 +14,15 @@
     height: 15em;
     width: 20em;
     background-color: black;
-    opacity: 0.7;
 }
 
 #title {
     color: whitesmoke;
     padding: .5em;
     font-family: 'Prata', serif;
+    background-color: black;
+    padding-bottom: 10px;
+
 }
 
 .btn-group {
@@ -29,12 +31,12 @@
 
 .fab {
     color: teal;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .bot {
     color: teal;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .carousel-control-prev-icon {

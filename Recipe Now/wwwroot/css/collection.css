@@ -2,12 +2,18 @@
     padding: 0px;
 }
 
+.carousel-caption{
+    background-color: black;
+}
+
+
 img{
     max-width: 100%;
     width: 40rem;
     height: 35rem;
     object-fit: cover;
     border: solid black 1px;
+    
 }
 
 body {

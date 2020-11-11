@@ -20,6 +20,7 @@ a {
     color: black;
 }
 
+
 .form-control{
     padding: .55rem;  
     border-radius: 0px;
@@ -34,8 +35,16 @@ a {
 .form-control:focus {
     background-color: black;
     color: teal;
+    box-shadow: 0 0 0 0.2rem teal;
 }
+
 
 input{
     background-color: black;
+    font-family: 'Playfair Display', sans-serif;
 }
+
+.navbar{
+    border-bottom: 1px solid teal;
+}
+

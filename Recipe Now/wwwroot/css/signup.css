@@ -1,5 +1,18 @@
-﻿.photo {
+﻿button[type="submit"] {
+    background-color: black;
+    color: white;
+    border-color: teal;
+    border-width: 2px;
+}
+
+[type="submit"]:hover {
+    background-color: teal;
+    color: black;
+}
+
+.photo {
     background-size: cover;
+    position: absolute;
     background-position: center center;
     background-repeat: no-repeat;
 }
