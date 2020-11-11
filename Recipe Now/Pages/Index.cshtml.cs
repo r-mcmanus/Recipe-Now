@@ -12,16 +12,16 @@ namespace Recipe_Now.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly Recipe_NowContext _dbContext;
+        
         private readonly ILogger<IndexModel> _logger;
 
         //model properties go here
 
         //constructor, need it for other pages to access database
-        public IndexModel(ILogger<IndexModel> logger, Recipe_NowContext dBContext)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;//anything that uses the database might not be needed here but in other pages
-            _dbContext = dBContext;
+            
         }
 
         public void OnGet()
