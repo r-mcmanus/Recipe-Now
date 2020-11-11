@@ -25,7 +25,12 @@ body {
       background-color: black;
       color: white;
       opacity: 0.7;
+      font-family: 'Playfair Display', sans-serif;
       
+  }
+
+  .carousel-caption h1{
+    font-family: 'Prata', serif;
   }
 
 
