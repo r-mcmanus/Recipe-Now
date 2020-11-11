@@ -1,10 +1,22 @@
-﻿button[type="submit"] {
+﻿#box {
+     padding-left: 0px;
+     padding-right: 0px; 
+     background-image: url(https://images.unsplash.com/photo-1501784050997-975d9fdb56d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+.form-group p a {
+    color: black;
+}
+.form-group p a:hover {
+    color: teal;
+}
+
+button[type="submit"] {
     background-color: black;
     color: white;
     border-color: teal;
     border-width: 2px;
 }
-
 [type="submit"]:hover {
     background-color: teal;
     color: black;
