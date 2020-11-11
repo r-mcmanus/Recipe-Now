@@ -14,12 +14,13 @@
 button[type="submit"] {
     background-color: black;
     color: white;
-    border-color: teal;
-    border-width: 2px;
+    border-color: black;
+    border-width: 3px;
 }
 [type="submit"]:hover {
-    background-color: teal;
-    color: black;
+    background-color: black;
+    border-color: teal;
+    color: teal;
 }
 
 .photo {

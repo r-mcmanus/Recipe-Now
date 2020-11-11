@@ -5,7 +5,6 @@ html, body {
 a {
     color: white;
     font-family: 'Playfair Display', sans-serif;
-    
 }
 
 
@@ -16,6 +15,7 @@ a {
 
 .but:hover{
     background-color: teal;
+    border-radius: 0px;
     border: black;
     color: black;
 }
@@ -26,7 +26,7 @@ a {
     border-radius: 0px;
     padding-right: 10rem;
     margin-right: 5rem;
-    
+    margin-top: 2px;
     background-color: black;
     border: 0;
     
