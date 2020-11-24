@@ -17,18 +17,25 @@
     <script src="https://kit.fontawesome.com/d5b2bfb13e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
     <script>
-        function Ingredients() {
-            var x = document.getElementById("ingr");
-            var y = document.getElementById("buttonGroup")
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "none"
-                y.style.display = "block";
+        function hide()
+        {
+            var x = document.querySelector("div.active div.ingre");
+            var y = document.querySelector("div.active div.ingre1")
 
+            if(x.style.display === "none")
+            {
+            x.style.display = "block";
+            y.style.display = "none";
             }
+
+            else
+            {
+            x.style.display = "none";
+            y.style.display = "block"; 
+            }
+            
         }
+
     </script>
 
     <script>

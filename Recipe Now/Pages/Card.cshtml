@@ -30,33 +30,24 @@
 
                 <h3 id="title">@recipe.Name</h3>
                 @*<h3 id="title">@Model.Recipes.Find(x => x.ImagePath.Contains())</h3>*@
-                <div class="d-flex justify-content-center  btn-group" style="padding-top: 25px;">
-                    <button type="button" id="buttonGroup" style="display: block;" onclick="Ingredients()" class="btn btn-outline-secondary btn-lg">Ingredients</button>
+                <div class="d-flex justify-content-center btn-group" style="padding-top: 25px;">
+                    <div style="display: block;" class="ingre1">
+                    <button type="button"   onclick="hide()" class="btn btn-outline-secondary btn-lg ">Ingredients</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
+                    </div>
                 </div>
 
 
-                <div style="background-color: grey; position: absolute; bottom: 50px; display: none; " id="ingr">
-                    <h3 id="title" style="background-color: black;">Lorem ipsum dolor sit </h3>
+                <div style="background-color: grey; position: absolute; bottom: 50px; display: none;" class="ingre">
+                    <h3 id="title" style="background-color: black;">@recipe.Name</h3>
                     <ul>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <button type="button" onclick="Ingredients()" style="background-color: black;" class="btn btn-outline-secondary btn-lg">Ingredients</button>
+                        <li>@recipe.Ingredients</li>
+                        <button type="button" style="background-color: black;" onclick="hide()" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
                 </div>
-
-
-                <div class="container d-flex justify-content-around " style="position: absolute;  bottom: 0px; left: 0px;">
-                    <div class="fab fa-twitter-square fa-3x"></div>
-                    <div class="fab fa-facebook-square fa-3x"></div>
-                    <div class="fab fa-pinterest-square fa-3x"></div>
-                    <div class="fab fa-instagram-square fa-3x"></div>
-                    <div class="bot fas fa-envelope-square fa-3x"></div>
-                </div>
             </div>
             </div>
+
                 }
 
                 else
@@ -71,31 +62,20 @@
 
                 <h3 id="title">@recipe.Name </h3>
                 @*<h3 id="title">@Model.Recipes.Find(x => x.ImagePath.Contains())</h3>*@
-                <div class="d-flex justify-content-center  btn-group" style="padding-top: 25px;">
-                    <button type="button" id="buttonGroup" style="display: block;" onclick="Ingredients()" class="btn btn-outline-secondary btn-lg">Ingredients</button>
+                <div class="d-flex justify-content-center btn-group " style="padding-top: 25px;">
+                    <div style="display: block;" class="ingre1">
+                    <button type="button"   onclick="hide()" class="btn btn-outline-secondary btn-lg ">Ingredients</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
+                    </div>
                 </div>
 
 
-                <div style="background-color: grey; position: absolute; bottom: 50px; display: none; " id="ingr">
-                    <h3 id="title" style="background-color: black;">Lorem ipsum dolor sit </h3>
+                <div style="background-color: grey; position: absolute; bottom: 50px; display: none; " class="ingre">
+                    <h3 id="title" style="background-color: black;">@recipe.Name</h3>
                     <ul>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <li>fjkdla;jf</li>
-                        <button type="button" onclick="Ingredients()" style="background-color: black;" class="btn btn-outline-secondary btn-lg">Ingredients</button>
+                        <li>@recipe.Ingredients</li>
+                        <button type="button" onclick="hide()" style="background-color: black;" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
-                </div>
-
-
-                <div class="container d-flex justify-content-around " style="position: absolute;  bottom: 0px; left: 0px;">
-                    <div class="fab fa-twitter-square fa-3x"></div>
-                    <div class="fab fa-facebook-square fa-3x"></div>
-                    <div class="fab fa-pinterest-square fa-3x"></div>
-                    <div class="fab fa-instagram-square fa-3x"></div>
-                    <div class="bot fas fa-envelope-square fa-3x"></div>
                 </div>
             </div>
             </div>
