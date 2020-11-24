@@ -24,10 +24,16 @@ namespace Recipe_Now.Pages
             
         }
 
-        public void OnGet()
+        public void OnGet(string searchString)
         {
+            //CurrentFilter = searchString;
             //example
            //_dbContext.Users
         }
+
+        //public void OnPost()
+        //{
+        //    CurrentFilter = (string)ViewData["SearchString"];
+        //}
     }
 }

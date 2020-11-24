@@ -18,24 +18,8 @@ namespace Recipe_Now
         public static void Main(string[] args)
         {
 
-            //List<Recipe> recipes = new List<Recipe>();
-            ////Testing recipe list
-            //var recipeFile = File.ReadAllLines("Recipes.txt");
-            //int i = 0;
-            //while (i < recipeFile.Length)
-            //{
-            //    Recipe recipe = new Recipe();
-            //    recipe.IsDrink = bool.Parse(recipeFile[i]);
-            //    recipe.URL = recipeFile[i + 1];
-            //    recipe.Name = recipeFile[i + 2];
-            //    recipe.ImagePath = recipeFile[i + 3];
-            //    string ingredients = recipeFile[i + 4].Remove(0, 1);
-            //    recipe.Ingredients = ingredients;
-            //    //string ingredients = recipeFile[i + 4].Remove(0, 2);                       
-            //    //recipe.Ingredients = ingredients.Split("', '").ToList();           
-            //    recipes.Add(recipe);
-            //    i = i + 6;
-            //}
+
+            
 
 
             CreateHostBuilder(args).Build().Run();

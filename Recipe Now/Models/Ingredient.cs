@@ -7,20 +7,15 @@ using System.Threading.Tasks;
 
 namespace Recipe_Now.Models
 {
-    public class Recipe
+    public class Ingredient
     {
+
         [Key]
+        public int IngredientId { get; set; }
+        public string Description { get; set; }
+        
+        [ForeignKey("Recipe")]
         public int RecipeId { get; set; }
-        public string Name  { get; set; }
-
-        public string URL { get; set; }
-
-        public string ImagePath { get; set; }
-
-        public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
-
-        public bool IsDrink { get; set; }
-
-
+        public Recipe Recipe { get; set; }
     }
 }

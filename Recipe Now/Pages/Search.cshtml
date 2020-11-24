@@ -1,0 +1,10 @@
+﻿@page
+@model Recipe_Now.Pages.SearchModel
+@{
+}
+<ul>
+    @foreach (var r in Model.Recipes)
+    {
+        <li>@r.Name</li>
+    }
+</ul>

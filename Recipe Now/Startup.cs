@@ -13,6 +13,7 @@ namespace Recipe_Now
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
