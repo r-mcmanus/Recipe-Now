@@ -3,7 +3,6 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,29 +17,30 @@
     <script src="https://kit.fontawesome.com/d5b2bfb13e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
     <script>
-        function Ingredients() {
-            var x = document.getElementById("ingr");
-            var y = document.getElementById("buttonGroup")
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "none"
-                y.style.display = "block";
+        function hide()
+        {
+            var x = document.querySelector("div.active div.ingre");
+            var y = document.querySelector("div.active div.ingre1")
 
+            if(x.style.display === "none")
+            {
+            x.style.display = "block";
+            y.style.display = "none";
             }
+
+            else
+            {
+            x.style.display = "none";
+            y.style.display = "block"; 
+            }
+            
         }
 
-        //function GetSearchbarValue() {
-        //   document.getElementById("searchbutton").value = document.getElementById("searchbar").value;
-          
-        //}
     </script>
 
     <script>
         function signInButton() {
             var x = document.getElementsByClassName("but");
-            
 
         }
     </script>
@@ -62,28 +62,22 @@
             </li>
         </ul>
 
-        <form class="form-inline nav-item" asp-page="./Search" method="post">
-            <ul class="nav">
 
-                <li class="nav-item">
-                    <button type="submit" id="searchbutton"
-                            class=" but btn btn-dark fas fa-search fa-2x">
-                        
-                    </button>
-                    
-                </li>
+        <ul class="nav">
 
-                <li class="nav-item d-none d-md-block" style="padding-bottom: 3px;">
-                    @*<form class="form-inline nav-item">*@
-                    <input id="searchbar" class="form-control" type="Search" placeholder="Search" name="searchString" @*value="@Model.CurrentFilter"*@>
-                    
-                    @*</form>*@
-                </li>
+            <li class="nav-item">
+                <button class=" but btn btn-dark fas fa-search fa-2x"></button>
+            </li>
+
+            <li class="nav-item d-none d-md-block" style="padding-bottom: 3px;">
+                <form class="form-inline nav-item">
+                    <input class="form-control" type="Search" placeholder="Search">
+                </form>
+            </li>
 
 
 
-            </ul>
-        </form>
+        </ul>
         <!-- user's likes page/ admin's likes also goes in collections randomly-->
         <ul class="nav">
             <li class="nav-item">
