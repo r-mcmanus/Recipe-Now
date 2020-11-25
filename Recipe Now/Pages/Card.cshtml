@@ -33,7 +33,7 @@
                 <div class="d-flex justify-content-center btn-group" style="padding-top: 25px;">
                     <div style="display: block;" class="ingre1">
                     <button type="button"   onclick="hide()" class="btn btn-outline-secondary btn-lg ">Ingredients</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
+                    <button type="button" onclick="window.location.href= '@recipe.URL'" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
                     </div>
                 </div>
 
@@ -41,11 +41,12 @@
                 <div style="background-color: grey; position: absolute; bottom: 50px; display: none;" class="ingre">
                     <h3 id="title" style="background-color: black;">@recipe.Name</h3>
                     <ul>
-                        @foreach (var x in recipe.Ingredients)
+                       @foreach (var x in recipe.Ingredients)
                         {
-                            <li>@x.Description</li>
-
+                            <li>@x.Description</li> 
                         }
+                        
+                        
                         <button type="button" style="background-color: black;" onclick="hide()" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
                 </div>
@@ -69,7 +70,7 @@
                 <div class="d-flex justify-content-center btn-group " style="padding-top: 25px;">
                     <div style="display: block;" class="ingre1">
                     <button type="button"   onclick="hide()" class="btn btn-outline-secondary btn-lg ">Ingredients</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
+                    <button type="button" onclick="window.location.href= '@recipe.URL'" class="btn btn-outline-secondary btn-lg">Full Recipe</button>
                     </div>
                 </div>
 
@@ -79,8 +80,7 @@
                     <ul>
                         @foreach (var x in recipe.Ingredients)
                         {
-                            <li>@x.Description</li>
-
+                            <li>@x.Description</li> 
                         }
                         <button type="button" onclick="hide()" style="background-color: black;" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
