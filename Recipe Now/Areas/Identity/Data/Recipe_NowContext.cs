@@ -15,6 +15,7 @@ namespace Recipe_Now.Data
     {
         public Microsoft.EntityFrameworkCore.DbSet<Recipe> Recipes { get; set; }
         public Microsoft.EntityFrameworkCore.DbSet<Ingredient> Ingredients { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<Like> Likes { get; set; }
         public Recipe_NowContext(DbContextOptions<Recipe_NowContext> options)
             : base(options)
         {

@@ -44,7 +44,7 @@ namespace Recipe_Now.Pages
                     first = false;
                 }
                 else
-                    ingQueryString += " OR Description LIKE '%" + i + "%'";
+                    ingQueryString += " AND Description LIKE '%" + i + "%'";
             }
             //var recipeIds =  _dbContext.Ingredients.
             //    FromSqlRaw("Select RecipeId from Ingredients where"

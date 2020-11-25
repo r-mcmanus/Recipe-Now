@@ -41,7 +41,11 @@
                 <div style="background-color: grey; position: absolute; bottom: 50px; display: none;" class="ingre">
                     <h3 id="title" style="background-color: black;">@recipe.Name</h3>
                     <ul>
-                        <li>@recipe.Ingredients</li>
+                        @foreach (var x in recipe.Ingredients)
+                        {
+                            <li>@x.Description</li>
+
+                        }
                         <button type="button" style="background-color: black;" onclick="hide()" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
                 </div>
@@ -73,7 +77,11 @@
                 <div style="background-color: grey; position: absolute; bottom: 50px; display: none; " class="ingre">
                     <h3 id="title" style="background-color: black;">@recipe.Name</h3>
                     <ul>
-                        <li>@recipe.Ingredients</li>
+                        @foreach (var x in recipe.Ingredients)
+                        {
+                            <li>@x.Description</li>
+
+                        }
                         <button type="button" onclick="hide()" style="background-color: black;" class="btn btn-outline-secondary btn-lg">Ingredients</button>
                     </ul>
                 </div>
