@@ -1,11 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Recipe_Now.Data; 
+using Microsoft.EntityFrameworkCore;
+using Recipe_Now.Data;
 using Recipe_Now.Models;
+using Recipe_Now.CSScripts;
+
 
 namespace Recipe_Now.Pages
 {
@@ -23,7 +27,8 @@ namespace Recipe_Now.Pages
         public void OnGet()
         {
             Recipes.AddRange(_dbContext.Recipes);
-           foreach (var r in Recipes)
+            Recipes = RandomList.Randomize(Recipes).ToList();
+            foreach (var r in Recipes)
             {
                 var ingredients = _dbContext.Ingredients
                     .Where(i => i.RecipeId == r.RecipeId);
