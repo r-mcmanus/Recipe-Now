@@ -44,7 +44,7 @@ namespace Recipe_Now.Pages
                     first = false;
                 }
                 else
-                    ingQueryString += " OR Description LIKE '%" + i + "%'";
+                    ingQueryString += " AND Description LIKE '%" + i + "%'";
             }
             //var recipeIds =  _dbContext.Ingredients.
             //    FromSqlRaw("Select RecipeId from Ingredients where"
@@ -53,6 +53,14 @@ namespace Recipe_Now.Pages
                 .FromSqlRaw("Select * from Recipes where RecipeId in " +
                 "(Select RecipeId from Ingredients where" + ingQueryString +
                 /*+ recipeIds +*/ ")");
+
+                Recipes.AddRange(_dbContext.Recipes);
+           foreach (var r in Recipes)
+            {
+                var ingredients = _dbContext.Ingredients
+                    .Where(i => i.RecipeId == r.RecipeId);
+                r.Ingredients = ingredients.ToList();
+            }
                 
             Recipes = recipes.ToList();
             if (Recipes == null)
