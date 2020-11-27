@@ -9,6 +9,8 @@
 
 <div class="container d-flex " style=" margin-top: 2.7em;">
     <div class="row">
+        <form asp-page="./Search" method="post">
+            <button style="border: none;"  type="submit">
         <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 a">
             <img src="pic/food1.jpeg" alt="">
             <div class="carousel-caption" style="background-color: black;">
@@ -16,29 +18,55 @@
                 this is some text
             </div>
         </div>
+        </button>
+        <input type="hidden" name="searchString" value="turkey">
+        </form>
+
+
+        <form asp-page="./Search" method="post">
+            <button  style="border: none;"  type="submit">
         <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 a">
-            <img src="pic/food2.jpg" alt="">
-            <div class="carousel-caption">
-                <h1>food3</h1>
-                all about the collection
+            <img src="pic/food1.jpeg" alt="">
+            <div class="carousel-caption" style="background-color: black;">
+                <h1>Random Title</h1>
+                this is some text
             </div>
         </div>
+        </button>
+        <input type="hidden" name="searchString" value="Cheese">
+        </form>
+
     </div>
+
+
     <div class="row">
+        <form asp-page="./Search" method="post">
+            <button style="border: none;"  type="submit">
         <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 a">
-            <img src="pic/food3.jpg" alt="">
-            <div class="carousel-caption">
-                <h1>title for collection</h1>
-                text text text
+            <img src="pic/food1.jpeg" alt="">
+            <div class="carousel-caption" style="background-color: black;">
+                <h1>Random Title</h1>
+                this is some text
             </div>
         </div>
+        </button>
+        <input type="hidden" name="searchString" value="apple">
+        </form>
+
+        <form asp-page="./Search" method="post">
+            <button style="border: none;"  type="submit">
         <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 a">
-            <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-            <div class="carousel-caption">
-                <h1>Hello for collections</h1>
-                I am a silly placeholder
+            <img src="pic/food1.jpeg" alt="">
+            <div class="carousel-caption" style="background-color: black;">
+                <h1>Random Title</h1>
+                this is some text
             </div>
         </div>
+        </button>
+        <input type="hidden" name="searchString" value="beer">
+        </form>
+
+
     </div>
 
 </div>
