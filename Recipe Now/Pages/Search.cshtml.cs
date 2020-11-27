@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Recipe_Now.Data;
 using Recipe_Now.Models;
+using Recipe_Now.CSScripts;
 
 namespace Recipe_Now.Pages
 {
@@ -61,6 +62,7 @@ namespace Recipe_Now.Pages
             }
                 
             Recipes = recipes.ToList();
+            Recipes = RandomList.Randomize(Recipes).ToList();
             if (Recipes == null)
             {
                 return NotFound();
