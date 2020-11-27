@@ -91,9 +91,13 @@
         <!-- user's likes page/ admin's likes also goes in collections randomly-->
         <ul class="nav">
 
+            @*@if (SignInManager.IsSignedIn(User))
+            {*@
             <li class="nav-item">
                 <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="location.href = '/Likes'"></button>
             </li>
+                @*}*@
+
 
             <li class="nav-item signup " style="display:none">
                 <button class=" but btn btn-dark fa fa-cog fa-2x" onclick="window.location.href = 'Identity/Account/Register'"></button>

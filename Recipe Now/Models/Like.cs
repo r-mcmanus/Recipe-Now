@@ -13,6 +13,7 @@ namespace Recipe_Now.Models
     {
         [Key]
         public int LikeId { get; set; }
+    
         public virtual IdentityUser User { get; set; }
 
         [ForeignKey("Recipe")]

@@ -18,15 +18,13 @@ namespace Recipe_Now.Pages
 
         public SearchModel(Recipe_NowContext dbContext)
         {
-
             _dbContext = dbContext;
         }
 
         
-        public async Task<IActionResult> OnPostAsync(/*string searchString*/)
+        public async Task<IActionResult> OnPostAsync()
         {
             string searchString = Request.Form["searchString"];
-            //CurrentFilter = Request["searchString"];
             if (searchString == null)
                 return NotFound();
 

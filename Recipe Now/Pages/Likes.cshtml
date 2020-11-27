@@ -9,12 +9,9 @@
 
 <div class="container-fluid d-flex " style=" margin-top: 2.7em;">
     <div class="row">
-        <div class="no-gutters col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 a"><img src="pic/food1.jpeg" alt=""></div>
-        <div class="no-gutters col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 a"><img src="pic/food2.jpg" alt=""></div>
-        <div class="no-gutters col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 a"><img src="pic/food3.jpg" alt=""></div>
-        <div class="no-gutters col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 a"><img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""></div>
-
+        @foreach (var r in Model.FavoriteRecipes)
+        {
+            <div class="no-gutters col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 a"><img src="@r.ImagePath" alt=""></div>
+        }
     </div>
-    <div class="row"></div>
-
 </div>
