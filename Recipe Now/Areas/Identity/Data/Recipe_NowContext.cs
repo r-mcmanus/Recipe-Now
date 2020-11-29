@@ -33,7 +33,13 @@ namespace Recipe_Now.Data
             List<Recipe> recipes = new List<Recipe>();
 
             //Testing recipe list
-            char[] trimChars = { '[', ']', '\'' };
+            char[] trimChars = { '[', ']', '\'', '\"' };
+            string[] delimiterChars = {
+                            "', '",
+                            "\", '",
+                            "', \"",
+                            "\", \""
+                          };
             var recipeFile = File.ReadAllLines("Recipes.txt");
             int i = 0;
             int x = 1;
@@ -48,7 +54,7 @@ namespace Recipe_Now.Data
                 recipe.URL = recipeFile[i + 1];
                 recipe.Name = recipeFile[i + 2];
                 recipe.ImagePath = recipeFile[i + 3];
-                ingDesc = recipeFile[i + 4].Trim(trimChars).Split("', '").ToList();
+                ingDesc = recipeFile[i + 4].Trim(trimChars).Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries).ToList();
                 foreach (var j in ingDesc)
                 {
                     Ingredient ingredient = new Ingredient();
