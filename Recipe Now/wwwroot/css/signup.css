@@ -23,9 +23,54 @@ button[type="submit"] {
     color: teal;
 }
 
+#delete {
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-width: 3px;
+}
+
+#delete:hover {
+    background-color: black;
+    border-color: teal;
+    color: teal;
+}
+
+.nav .but {
+    background-color: black;
+    color: white;
+    border: black;
+}
+
 .photo {
     background-size: cover;
     position: absolute;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.signUpStuff {
+    background-image: url(https://images.unsplash.com/photo-1501784050997-975d9fdb56d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+.signUpStuff p {
+    color: black;
+}
+
+.signUpStuff a {
+    color: teal;
+    font-style: italic;
+}
+
+.nav a {
+    color: black;
+}
+.nav a:active {
+    color: teal;
+    background-color: black;
+}
+/*!important must be used very carefully.*/
+.nav-pills .nav-link.active {
+    background-color: black!important;
+    color: teal!important;
 }

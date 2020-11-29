@@ -10,7 +10,8 @@ a {
 
 .but{
     background-color: black;
-     border: black;
+    color: white;
+    border: black;
 }
 
 .but:hover{
