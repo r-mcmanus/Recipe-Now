@@ -1,17 +1,11 @@
-﻿@page
-@model Recipe_Now.Pages.CardModel
+@page
+@model Recipe_Now.Pages.DrinksModel
 @{
 }
 
 @section Styles {
     <link rel="stylesheet" href="~/css/card.css">
 }
-
-@using Microsoft.AspNetCore.Identity
-
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
 
 
 
@@ -58,8 +52,6 @@
                         </ul>
                     </div>
                 </div>
-            @if (SignInManager.IsSignedIn(User))
-            {
                 <form asp-page="./Likes" method="post">
                     <button type="submit">
                         <div class="fa-3x" style="position: absolute; left: 0; bottom:0; color: black;">
@@ -70,10 +62,10 @@
                     </button>
                     <input type="hidden" name="newLike" value="@recipe.RecipeId" />
                 </form>
-            }
             </div>
                     
                 }
+
                 else
                 {
         <div class="carousel-item h-100 photo"
@@ -106,8 +98,6 @@
                     </ul>
                 </div>
             </div>
-            @if (SignInManager.IsSignedIn(User))
-            {
             <form asp-page="./Likes" method="post">
                 <button type="submit">
                     <div class="fa-3x" style="position: absolute; left: 0; bottom:0; color: black;">
@@ -118,7 +108,6 @@
                 </button>
                 <input type="hidden" name="newLike" value="@recipe.RecipeId" />
             </form>
-            }
         </div>
                     
                 }
