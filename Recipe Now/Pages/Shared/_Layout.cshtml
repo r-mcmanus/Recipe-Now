@@ -1,5 +1,4 @@
 ﻿@using Microsoft.AspNetCore.Identity
-
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
@@ -36,6 +35,8 @@
             
         }
 
+
+
     </script>
 
     <script>
@@ -62,8 +63,8 @@
             </li>
         </ul>
 
-
-        <form class="form-inline nav-item" asp-page="./Search" method="post">
+    
+        <form class="form-inline nav-item"  asp-page="./Search" asp-page-handler="Search" method="post" >
             <ul class="nav">
 
                 <li class="nav-item">
@@ -84,6 +85,7 @@
 
             </ul>
         </form>
+        
 
 
 
