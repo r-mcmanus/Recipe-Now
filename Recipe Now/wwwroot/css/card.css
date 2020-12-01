@@ -78,3 +78,8 @@
     padding-top: 15px;
     left: 0px;
 }
+
+.fa-3x:hover svg:hover{
+    color: teal !important;
+    stroke: black!important;
+}
