@@ -26,7 +26,12 @@ namespace Recipe_Now.Pages
         }
         public void OnGet()
         {
+                var recipes = _dbContext.Recipes
+                 .FromSqlRaw("Select * from Recipes where IsDrink = 0" );
+
+            
             Recipes.AddRange(_dbContext.Recipes);
+            Recipes = recipes.ToList();
             Recipes = RandomList.Randomize(Recipes).ToList();
             foreach (var r in Recipes)
             {
