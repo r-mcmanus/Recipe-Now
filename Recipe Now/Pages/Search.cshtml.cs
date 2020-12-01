@@ -26,8 +26,11 @@ namespace Recipe_Now.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             string searchString = Request.Form["searchString"];
-            if (searchString == null)
-                return NotFound();
+            if (searchString == "")
+            {
+                Response.Redirect("Index");
+                return Page();
+            }
 
             string ingQueryString = null;
             bool first = true;
