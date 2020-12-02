@@ -21,6 +21,8 @@ namespace Recipe_Now.Models
 
         public bool IsDrink { get; set; }
 
+        public int NumberOfLikes { get; set; }
+
 
     }
 }
