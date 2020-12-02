@@ -1,8 +1,4 @@
-﻿@section Styles {
-    <link rel="stylesheet" href="~/css/signup.css">
-    <link rel="stylesheet" href="~/css/main.css">
-}
-@{
+﻿@{
     if (ViewData.TryGetValue("ParentLayout", out var parentLayout))
     {
         Layout = (string)parentLayout;
@@ -12,21 +8,27 @@
         Layout = "/Areas/Identity/Pages/_Layout.cshtml";
     }
 }
+@section Styles {
+    <link rel="stylesheet" href="~/css/signup.css">
+    <link rel="stylesheet" href="~/css/main.css">
+}
 
 <h2>Manage your account</h2>
 
-<div>
-    <h4>Change your account settings</h4>
-    <hr />
-    <div class="row">
-        <div class="col-md-3">
-            <partial name="_ManageNav" />
-        </div>
-        <div class="col-md-9">
-            @RenderBody()
+<div id="box">
+    <div>
+        <h4>Change your account settings</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-3">
+                <partial name="_ManageNav" />
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
         </div>
     </div>
 </div>
-@section Scripts {
-    @RenderSection("Scripts", required: false)
-}
+    @section Scripts {
+        @RenderSection("Scripts", required: false)
+    }

@@ -66,7 +66,7 @@
         @*Switch the search bar to a home button if user is in the account pages.*@
         @if (ViewContext.RouteData.Values["page"].ToString().Contains("Account"))
         {
-            <a class="nav-link but" id="home" href="~/Index">Home</a>
+            <a class="nav-link but nav-item" id="home" href="~/Index">Home</a>
         }
         else
         {

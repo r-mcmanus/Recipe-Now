@@ -1,7 +1,14 @@
 ﻿@page
 @model ConfirmEmailModel
+@section Styles {
+    <link rel="stylesheet" href="~/css/signup.css">
+}
 @{
     ViewData["Title"] = "Confirm email";
 }
 
-<h1>@ViewData["Title"]</h1>
+<br />
+<br />
+<div class="container-fluid d-flex justify-content-center align-items-center photo  h-100 overflow-hidden" id="box">
+    <div>Please <a id="signUpLinks" href="Login">log in</a> using your new account.</div>
+</div>

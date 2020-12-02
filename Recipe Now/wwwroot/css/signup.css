@@ -1,13 +1,18 @@
 ﻿#box {
-     padding-left: 0px;
-     padding-right: 0px; 
-     background-image: url(https://images.unsplash.com/photo-1501784050997-975d9fdb56d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: inherit;
+    background-image: url(https://images.unsplash.com/photo-1501784050997-975d9fdb56d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
 }
 
-.form-group p a {
+.form-group a {
     color: black;
 }
-.form-group p a:hover {
+.form-group a:hover {
     color: teal;
 }
 
@@ -36,17 +41,22 @@ button[type="submit"] {
     color: teal;
 }
 
-.nav .but {
-    background-color: black;
-    color: white;
-    border: black;
-}
-
 .photo {
     background-size: cover;
     position: absolute;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.nav .but {
+    background-color: black;
+    color: white;
+    border: black;
+}
+.nav .but:hover {
+    background-color: teal;
+    color: black;
+    border: black;
 }
 
 .signUpStuff {
@@ -62,10 +72,23 @@ button[type="submit"] {
     font-style: italic;
 }
 
+#signUpLinks {
+    color: teal;
+    font-style: italic;
+}
+
+a.btn-default {
+    color: teal!important;
+    font-style: italic;
+}
+/*https://localhost:44366/Identity/Account/RegisterConfirmation?email=heyaaa@gmail.com&returnUrl=%2F 
+  https://localhost:44366/Identity/Account/ConfirmEmail?userId=b6e84743-5d82-4642-926c-dab37b4d9c57&code=Q2ZESjhOSkFxaFhkUVY1QXM2end4MDhvNklIVnp0am1JTThGd01iaGZHNW9Za1Jzc3VpV3g5OVVCcnpXNDdWTHdoNHBtU3VwbldCcUlIcU5sS1Rnbm0vWFlGZ3NSQTNQZ21yR1RZWWk0RUFzL01zTkpldzkzRFFhakhmLytnVFVxTHJHSm1mTThZK3hmc1B4L01RUXVIa1FFRXU0azdDV0J1VDJWQTR1ZGJLKzFOWWk4WDBKSkpBL0dSZTB6endyTmU2T1pYdG5HL2NSK0JPeGhMRThVRnVmM0h2TUFVT0dtM2ZHaW1jTEZwc1F1SU5rV2dINGJITG5jaWtSUlJuNm5EZ0RIUT09&returnUrl=%2F
+*/
+
 .nav a {
     color: black;
 }
-.nav a:hover {
+.nav-pills a:hover {
     color: teal;
     background-color: #404040;
 }

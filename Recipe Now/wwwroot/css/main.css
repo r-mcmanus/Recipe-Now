@@ -51,5 +51,7 @@ input{
 
 #home {
     float: left;
-    margin: 0 10% 0 0;
+    position: fixed;
+    top: 0.3%;
+    right: 50%;
 }
