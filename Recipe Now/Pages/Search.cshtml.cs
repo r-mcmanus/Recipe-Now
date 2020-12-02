@@ -23,7 +23,7 @@ namespace Recipe_Now.Pages
         }
 
         
-        public async Task<IActionResult> OnPostSearchAsync()
+        public async Task<IActionResult> OnPostAsync()
         {
             string searchString = Request.Form["searchString"];
             if (searchString == "")
