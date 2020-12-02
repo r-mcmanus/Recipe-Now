@@ -63,41 +63,40 @@
             </li>
         </ul>
 
-    
-        <form class="form-inline nav-item"  asp-page="./Search" asp-page-handler="Search" method="post" >
-            <ul class="nav">
+        @*Switch the search bar to a home button if user is in the account pages.*@
+        @if (ViewContext.RouteData.Values["page"].ToString().Contains("Account"))
+        {
+            <a class="nav-link but" id="home" href="~/Index">Home</a>
+        }
+        else
+        {
+            <form class="form-inline nav-item" asp-page="./Search" asp-page-handler="Search" method="post">
+                <ul class="nav">
 
-                <li class="nav-item">
-                    <button type="submit" id="searchbutton"
-                            class=" but btn btn-dark fas fa-search fa-2x">
-                    </button>
-
-                </li>
-
-                <li class="nav-item d-none d-md-block" style="padding-bottom: 3px;">
-                    
-                    <input id="searchbar" class="form-control" type="Search" placeholder="Search" name="searchString" @*value="@Model.CurrentFilter"*@>
-
-                    
-                </li>
-
-
-
-            </ul>
-        </form>
-        
+                    <li class="nav-item">
+                        <button type="submit" id="searchbutton"
+                                class=" but btn btn-dark fas fa-search fa-2x">
+                        </button>
+                    </li>
+                    <li class="nav-item d-none d-md-block" style="padding-bottom: 3px;">
+                        <input id="searchbar" class="form-control" type="Search" placeholder="Search" name="searchString" @*value="@Model.CurrentFilter"*@>
+                    </li>
+                </ul>
+            </form>
+        }
 
 
 
-        
+
+
         <!-- user's likes page/ admin's likes also goes in collections randomly-->
         <ul class="nav">
 
             @if (SignInManager.IsSignedIn(User))
             {
-            <li class="nav-item">
-                <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="location.href = '/Likes'"></button>
-            </li>
+                <li class="nav-item">
+                    <button class=" but btn btn-dark fa fa-heart fa-2x" onclick="location.href = '/Likes'"></button>
+                </li>
             }
 
 
