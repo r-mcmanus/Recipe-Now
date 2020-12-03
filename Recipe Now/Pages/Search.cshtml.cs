@@ -32,6 +32,23 @@ namespace Recipe_Now.Pages
                 return Page();
             }
 
+            if (searchString == "likes")
+            {
+                var recipe = _dbContext.Recipes
+                    .FromSqlRaw("Select * from Recipes where NumberOfLikes != 0");
+                    Recipes.AddRange(_dbContext.Recipes);
+
+            foreach (var r in Recipes)
+            {
+                var ingredients = _dbContext.Ingredients
+                    .Where(i => i.RecipeId == r.RecipeId);
+                r.Ingredients = ingredients.ToList();
+            }
+
+            Recipes = recipe.ToList();
+            return Page();
+            }
+
             string ingQueryString = null;
             bool first = true;
             searchString.Trim();
